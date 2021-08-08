@@ -17,14 +17,27 @@
 
 <h2>My Heroes</h2>
 <ul class="heroes">
-  <li *ngFor="let hero of heroes">
-    <span class="badge">{{hero.idHero}}</span> {{hero.name}}
-
-    <div style="text-align: right; margin-top: -39px;">
-      <a class="" routerLink="/detail/{{hero.idHero}}">
-        <button class="button">Update</button>
-      </a>
-      <button class="button" style="background-color: red; margin-left: 75px;" (click)="delete(hero)">Delete</button>
-    </div>
-  </li>
+  <table id="hero">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Surname</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes">
+        <td>{{hero.idHero}}</td>
+        <td>{{hero.name}}</td>
+        <td>{{hero.surname}}</td>
+        <td>
+          <a class="" routerLink="/detail/{{hero.idHero}}">
+            <button class="update">Update</button>
+          </a>
+          <button class="delete" (click)="delete(hero)">Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
 </ul>

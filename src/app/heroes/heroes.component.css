@@ -1,86 +1,57 @@
-/* HeroesComponent's private CSS styles */
-.heroes {
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding: 0;
-  width: 15em;
-}
-.heroes li {
-  position: relative;
-  cursor: pointer;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em 0;
-  height: 1.6em;
-  border-radius: 4px;
+#hero {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+ 
 }
 
-.heroes li:hover {
-  color: #607D8B;
-  background-color: #DDD;
-  left: .1em;
+#hero td, #hero th {
+  border: 1px solid #ddd;
+  padding: 8px;
 }
 
-.heroes a {
-  color: #333;
-  text-decoration: none;
-  /* position: relative;
-  display: block; */
-  width: 250px;
-}
+#hero tr:nth-child(even){background-color: #f2f2f2;}
 
-.heroes a:hover {
-  color:#607D8B;
-}
+#hero tr:hover {background-color: #ddd;}
 
-.heroes .badge {
-  display: inline-block;
-  font-size: small;
+#hero th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color:#405061;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  min-width: 16px;
-  text-align: right;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
 }
 
-button {
-  background-color: #eee;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-  font-family: Arial;
-}
-
-button:hover {
-  background-color: #cfd8dc;
-}
-
-button.delete {
-  /* position: relative; */
-  left: 194px;
-  top: -32px;
-  background-color: gray !important;
-  color: white;
-  display: inline-block;
-}
-
-.button {
-  background-color: #4CAF50;
+.delete {
+  background-color: red;
   border: none;
   color: white;
-  text-decoration: none;
-  display: inline-block;
+  padding: 8px 15px;
+  text-align: center;
   font-size: 16px;
   margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
-  position: absolute;
 }
+
+.delete:hover {opacity: 1}
+
+.update {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.update:hover {opacity: 1}
