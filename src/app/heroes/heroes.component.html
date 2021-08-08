@@ -1,17 +1,12 @@
 <h2>Add hero</h2>
-
-<h2>My Heroes</h2>
-
 <div>
   <label>Name:
-    <input [(ngModel)]="hero.name" placeholder="Name" />
+    <input [(ngModel)]="hero.name" placeholder="Name" maxlength="20" />
   </label>
   <br />
   <label>Surname:
-    <input [(ngModel)]="hero.surname" placeholder="Surname" />
+    <input [(ngModel)]="hero.surname" placeholder="Surname" maxlength="20" />
   </label>
-
-  <!-- (click) passes input value to add() and then clears the input -->
   <br />
   <button (click)="saveHero()">
     Add
@@ -20,12 +15,16 @@
 
 <br />
 
-<h2>Delete Hero</h2>
+<h2>My Heroes</h2>
 <ul class="heroes">
   <li *ngFor="let hero of heroes">
-    <a routerLink="/detail/{{hero.idHero}}">
-      <span class="badge">{{hero.idHero}}</span> {{hero.name}}
-    </a>
-    <button class="delete" title="delete hero" (click)="delete(hero)">x</button>
+    <span class="badge">{{hero.idHero}}</span> {{hero.name}}
+
+    <div style="text-align: right; margin-top: -39px;">
+      <a class="" routerLink="/detail/{{hero.idHero}}">
+        <button class="button">Update</button>
+      </a>
+      <button class="button" style="background-color: red; margin-left: 75px;" (click)="delete(hero)">Delete</button>
+    </div>
   </li>
 </ul>
