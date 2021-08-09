@@ -6,8 +6,9 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { HeroUpdateComponent } from './hero-update/hero-update.component';
+import { HeroCreateComponent } from './hero-create/hero-create.component';
 
 @NgModule({
   imports: [
@@ -26,7 +27,8 @@ import { HeroesComponent } from './heroes/heroes.component';
   declarations: [
     AppComponent,
     HeroesComponent,
-    HeroDetailComponent
+    HeroUpdateComponent,
+    HeroCreateComponent
   ],
   bootstrap: [AppComponent]
 })

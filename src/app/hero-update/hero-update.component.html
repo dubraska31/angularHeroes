@@ -1,0 +1,16 @@
+<div class="form" *ngIf="hero ">
+    <h2>Update hero</h2>
+  
+    <div>
+      <label>Name:
+        <input [(ngModel)]="hero.name" type="text" id="fname"placeholder="Name" />
+      </label>
+      <br />
+      <label>Surname:
+        <input [(ngModel)]="hero.surname" type="text" id="lname" placeholder="Surname" />
+      </label>
+    </div>
+  
+    <button class="goback" (click)="goBack()" >Go back</button>
+    <button class="up"(click)="updateHero()">Update</button>
+  </div>

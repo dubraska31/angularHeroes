@@ -1,21 +1,6 @@
-
-
-<div>
-  <label>Name:
-    <input [(ngModel)]="hero.name" type="text" id="fname" placeholder="Name" />
-  </label>
-  <br />
-  <label>Surname:
-    <input [(ngModel)]="hero.surname" type="text" id="lname" placeholder="Surname"/>
-  </label>
-  <br />
-  <button class="add"(click)="saveHero()">
-    Add
-  </button>
-</div>
-
-<br />
-
+<a routerLink="/create">
+  <button class="create">create</button>
+</a>
 <h2>My Heroes</h2>
 <ul>
   <table class="heroesTable" >
@@ -33,7 +18,7 @@
         <td>{{hero.name}}</td>
         <td>{{hero.surname}}</td>
         <td>
-          <a class="" routerLink="/detail/{{hero.idHero}}">
+          <a routerLink="/update/{{hero.idHero}}">
             <button class="update">Update</button>
           </a>
           <button class="delete" (click)="delete(hero)">Delete</button>

@@ -38,27 +38,19 @@
 
 .update { background-color: blue;}
 
-.delete:hover, .update:hover {opacity: 1}
-
-.add {
-  background-color: blue;
+.create{
+  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
-  padding: 8px 15px;
+  padding: 15px 32px;
   text-align: center;
-  font-size: 16px;
-  margin: 4px 2px;
-  opacity: 0.6;
-  transition: 0.3s;
-  display: inline-block;
   text-decoration: none;
-  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+
+
 }
 
-.add:hover {opacity: 1}
+.delete:hover, .update:hover {opacity: 1}
 
-div {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
+
