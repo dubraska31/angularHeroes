@@ -1,16 +1,16 @@
 <div *ngIf="hero ">
-  <h2>{{hero.name | uppercase}} Details</h2>
+  <h2>Update hero</h2>
 
   <div>
     <label>Name:
-      <input [(ngModel)]="hero.name" placeholder="Name" />
+      <input [(ngModel)]="hero.name" type="text" id="fname"placeholder="Name" />
     </label>
     <br />
     <label>Surname:
-      <input [(ngModel)]="hero.surname" placeholder="Surname" />
+      <input [(ngModel)]="hero.surname" type="text" id="lname" placeholder="Surname" />
     </label>
   </div>
 
-  <button (click)="goBack()">Go back</button>
-  <button (click)="updateHero()">Update</button>
+  <button class="goback" (click)="goBack()" >Go back</button>
+  <button class="up"(click)="updateHero()">Update</button>
 </div>

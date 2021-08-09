@@ -1,14 +1,15 @@
-<h2>Add hero</h2>
+
+
 <div>
   <label>Name:
-    <input [(ngModel)]="hero.name" placeholder="Name" maxlength="20" />
+    <input [(ngModel)]="hero.name" type="text" id="fname" placeholder="Name" />
   </label>
   <br />
   <label>Surname:
-    <input [(ngModel)]="hero.surname" placeholder="Surname" maxlength="20" />
+    <input [(ngModel)]="hero.surname" type="text" id="lname" placeholder="Surname"/>
   </label>
   <br />
-  <button (click)="saveHero()">
+  <button class="add"(click)="saveHero()">
     Add
   </button>
 </div>
@@ -16,8 +17,8 @@
 <br />
 
 <h2>My Heroes</h2>
-<ul class="heroes">
-  <table id="hero">
+<ul>
+  <table class="heroesTable" >
     <thead>
       <tr>
         <th>ID</th>

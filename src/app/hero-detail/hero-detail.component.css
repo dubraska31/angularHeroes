@@ -1,31 +1,54 @@
-/* HeroDetailComponent's private CSS styles */
-label {
-  display: inline-block;
-  width: 3em;
-  margin: .5em 0;
-  color: #607D8B;
-  font-weight: bold;
+div {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  
 }
-input {
-  height: 2em;
-  font-size: 1em;
-  padding-left: .4em;
+
+input[type=text], select {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  margin: 0.5rem;
 }
-button {
-  margin-top: 20px;
-  font-family: Arial;
-  background-color: #eee;
+
+.goback {
+  background-color: orange;
   border: none;
-  padding: 5px 10px;
-  border-radius: 4px;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
   cursor: pointer;
-  cursor: hand;
 }
-button:hover {
-  background-color: #cfd8dc;
+
+.goback:hover {opacity: 1}
+
+.up {
+  background-color: blue;
+  border: none;
+  color: white;
+  padding: 8px 15px;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
-button:disabled {
-  background-color: #eee;
-  color: #ccc;
-  cursor: auto;
-}
+
+.up:hover {opacity: 1}
+
